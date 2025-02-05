@@ -113,8 +113,7 @@ ExternalProject_Add(curl
 )
 ExternalProject_Add(grpc-repo
   PREFIX grpc-repo
-  GIT_REPOSITORY "/root/workspace/grpc-1.48.x.zip"
-  GIT_TAG "v1.48.x"
+  URL "/root/workspace/grpc-1.48.x.zip"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/grpc-repo/src/grpc"
   EXCLUDE_FROM_ALL ON
   CONFIGURE_COMMAND ""
